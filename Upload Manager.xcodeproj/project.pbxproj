@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		536F93FED7BC4D9469406241 /* Pods_Upload_Manager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F1D3F003ABDBC9760D59205 /* Pods_Upload_Manager.framework */; };
 		DC6DC2CF28042B89005F9560 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6DC2CE28042B89005F9560 /* AppDelegate.swift */; };
 		DC6DC2D128042B89005F9560 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6DC2D028042B89005F9560 /* SceneDelegate.swift */; };
 		DC6DC2D328042B89005F9560 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6DC2D228042B89005F9560 /* ViewController.swift */; };
@@ -20,9 +19,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4727CDDE85E8C491E77CF55E /* Pods-Upload Manager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Upload Manager.release.xcconfig"; path = "Target Support Files/Pods-Upload Manager/Pods-Upload Manager.release.xcconfig"; sourceTree = "<group>"; };
-		6F1D3F003ABDBC9760D59205 /* Pods_Upload_Manager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Upload_Manager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8F92DBCF3FFB4EB3C715BB00 /* Pods-Upload Manager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Upload Manager.debug.xcconfig"; path = "Target Support Files/Pods-Upload Manager/Pods-Upload Manager.debug.xcconfig"; sourceTree = "<group>"; };
 		DC6DC2CB28042B89005F9560 /* Upload Manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Upload Manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC6DC2CE28042B89005F9560 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC6DC2D028042B89005F9560 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,37 +37,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				536F93FED7BC4D9469406241 /* Pods_Upload_Manager.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		02196BEF22642AC069317E1B /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				6F1D3F003ABDBC9760D59205 /* Pods_Upload_Manager.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		8ADE6794947FAC3ADC96DFCB /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				8F92DBCF3FFB4EB3C715BB00 /* Pods-Upload Manager.debug.xcconfig */,
-				4727CDDE85E8C491E77CF55E /* Pods-Upload Manager.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		DC6DC2C228042B89005F9560 = {
 			isa = PBXGroup;
 			children = (
 				DC6DC2CD28042B89005F9560 /* Upload Manager */,
 				DC6DC2CC28042B89005F9560 /* Products */,
-				8ADE6794947FAC3ADC96DFCB /* Pods */,
-				02196BEF22642AC069317E1B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,7 +115,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DC6DC2DF28042B8A005F9560 /* Build configuration list for PBXNativeTarget "Upload Manager" */;
 			buildPhases = (
-				A9042D7B034CBF565B02C8FA /* [CP] Check Pods Manifest.lock */,
 				DC6DC2C728042B89005F9560 /* Sources */,
 				DC6DC2C828042B89005F9560 /* Frameworks */,
 				DC6DC2C928042B89005F9560 /* Resources */,
@@ -198,31 +173,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		A9042D7B034CBF565B02C8FA /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Upload Manager-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DC6DC2C728042B89005F9560 /* Sources */ = {
@@ -378,7 +328,6 @@
 		};
 		DC6DC2E028042B8A005F9560 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8F92DBCF3FFB4EB3C715BB00 /* Pods-Upload Manager.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -406,7 +355,6 @@
 		};
 		DC6DC2E128042B8A005F9560 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4727CDDE85E8C491E77CF55E /* Pods-Upload Manager.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
